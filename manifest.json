@@ -1,8 +1,12 @@
 {
-  "name": "Extension",
+  "name": "Password Generator",
   "version": "0.0.1",
   "manifest_version": 3,
   "description": "",
-  "action": {"default_popup": "default_popup.html"},
-  "background": {"service_worker": "service_worker.js"}
+  "action": {
+    "default_popup": "default_popup.html",
+    "default_icon": "icon.png"
+  },
+  "background": {"service_worker": "service_worker.js"},
+  "permissions": [ "storage", "tabs", "scripting" ]
 }
